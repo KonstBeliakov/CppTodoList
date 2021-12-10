@@ -13,6 +13,7 @@ using namespace std;
 
 class Task {
 public:
+    int hard = 0;
     void setName(string name);
     string getName();
     void setDescription(string desc);
@@ -23,6 +24,8 @@ public:
 
     Task();
     Task(string name, string description);
+
+
 private:
     string name;
     string description;

@@ -50,3 +50,7 @@ vector<Task> TodoList::resolvedTasks() {
     }
     return activeTasks;
 }
+
+Task TodoList::operator[](int index) {
+    return tasks[index];
+}

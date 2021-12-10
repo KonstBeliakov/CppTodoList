@@ -46,3 +46,16 @@ TaskStatus Task::getStatus() {
 void Task::complete() {
     status = RESOLVED;
 }
+
+
+int operator + (const Task& task1, const Task& task2){
+    return (task1.hard + task2.hard);
+}
+
+bool operator > (const Task& task1, const Task& task2){
+    return task1.hard > task2.hard;
+}
+
+bool operator < (const Task& task1, const Task& task2){
+    return task1.hard < task2.hard;
+}
